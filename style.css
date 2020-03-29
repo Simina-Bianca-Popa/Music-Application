@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    }
+body {
+    margin: auto;
+    font-family: 'Comic Neue', cursive;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+.MusicApp {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    width: 100%;
+    
+}
+header h1 {
+   margin: 5rem 0 3rem 0; 
+   text-align: center;
+   font-size: 5rem;
+   color: white;
+}
+header p {
+    font-size: 2rem;;
+    color: white;
+    text-align: center;
+}
+
+.steps {
+    width: 100%;
+    display: flex;
+}
+.steps > div {
+    height: 20rem;
+    width: 10rem;
+    flex: 1;
+}
+
+.step1 {
+   background-color: red;
+   background-image: linear-gradient(to right,red, orange);
+}
+
+.step2 {
+    background-color: orange;
+    background-image: linear-gradient(to right, orange, yellow);
+}
+
+.step3 {
+    background-color: yellow;
+    background-image: linear-gradient(to right, yellow, green);
+}
+
+.step4 {
+    background-color: green;
+    background-image: linear-gradient(to right, green, blue);
+}
+
+.step5 {
+    background-color: blue;
+    background-image: linear-gradient(to right, blue, indigo);
+}
+
+.step6 {
+    background-color: indigo;
+    background-image: linear-gradient(to right, indigo, violet);
+}
+.bubbles > div {
+    position: absolute;
+    height: 6rem;
+    width: 5rem;
+    border-radius: 50%;
+    bottom: 0;
+    left: 20%;
+    z-index: -1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+} 

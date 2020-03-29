@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize-context/cssnormalize-context-min.css"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>Tap Music App</title>
+</head>
+<body>
+    <section class="MusicApp"> 
+        <header>
+            <h1> 
+                Tap Music App
+            </h1>
+            <p>Tap below to create Music                
+            </p>
+        </header>
+        <div class="bubbles"> 
+        </div>
+        <div class="steps">
+            <div class="step1"> 
+                <audio class="sound" src="./sounds/bubbles.mp3"> <!-- need div because cannot apply style on audio-->
+                </audio>
+            </div>
+
+            <div class="step2">
+                <audio class="sound" src="./sounds/clay.mp3">
+                </audio>
+            </div>
+
+            <div class="step3">
+                <audio class="sound" src="./sounds/confetti.mp3">
+                </audio>
+            </div>
+
+            <div class="step4">
+                <audio class="sound" src="./sounds/glimmer.mp3">
+                </audio>
+            </div>
+
+            <div class="step5">
+                <audio class="sound" src="./sounds/moon.mp3">
+                </audio>
+            </div>
+
+            <div class="step6">
+                <audio class="sound" src="./sounds/ufo.mp3">
+                </audio>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js" defer>
+    </script>
+</body>
+</html>
